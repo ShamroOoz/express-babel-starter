@@ -39,7 +39,6 @@ app.use("/", mainRouter);
 //user route
 app.use("/user", userRouter);
 app.use("/user", usersRouter);
-app.use("/product", productRouter);
 
 app.listen(Port, () =>
   console.log(`🚀 Server ready at http://localhost${Port}`)
