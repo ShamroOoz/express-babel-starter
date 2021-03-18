@@ -13,6 +13,7 @@ const app = express();
 //init .env
 require("dotenv").config();
 
+console.log(process.env.DB_HOST);
 //setting up Port
 const Port = process.env.PORT || 4000;
 

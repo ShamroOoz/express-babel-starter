@@ -2,19 +2,14 @@ import express from "express";
 import { dbconnection } from "./api/Helper/db";
 import cors from "cors";
 import morgan from "morgan";
-//routers import
+//routers
 import mainRouter from "./api/Routers";
-import userRouter from "./api/Routers/user";
+import userRouter from "./api/Routers/user/User";
 import usersRouter from "./api/Routers/user/User";
 
 //Init Express App
 const app = express();
-
-//init .env
-require("dotenv").config();
-
-//setting up Port
-const Port = process.env.PORT || 4000;
+const Port = process.env.Port || 4000;
 
 //init cors
 app.use(cors());
@@ -29,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 //DB Connection
 app.use(dbconnection);
 
-//auth  middleware
+//is auth  middleware
 // app.use(AuthMiddleware);
 
 //Routes
