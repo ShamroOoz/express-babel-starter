@@ -1,6 +1,17 @@
 # express-babel-starter
-clone the project and install add the dependencies and you are good to go....
-`
+
+
+clone the project
+
+
+Install the dependencies
+
+```
 npm install
-`
+
+```
+
+
+You are good to go....
+
 
